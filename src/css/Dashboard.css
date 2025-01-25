@@ -32,6 +32,7 @@
   font-family: "Source Sans 3", serif;
 }
 
+/* BOXES */
 .dashboard-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -93,4 +94,48 @@
   margin: 0;
   font-family: "Source Sans 3", serif;
   font-weight: 400;
+}
+
+/* GRAPH */
+
+.dashboard-linegraph {
+  margin: 10px;
+}
+.line-graph-container {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  text-align: center;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.filter-btn {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.filter-btn.active {
+  background-color: var(--bgc-sidenav);
+  color: white;
+  font-weight: bold;
+}
+
+.filter-btn:hover {
+  background-color: var(--fontcolor-header);
+  color: white;
 }

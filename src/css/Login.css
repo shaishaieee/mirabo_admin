@@ -86,6 +86,11 @@
   font-size: 14px;
 }
 
+.login-options p:hover {
+  color: var(--bgc-sidenav);
+  cursor: pointer;
+}
+
 .signin-button {
   margin: 20px;
 }
@@ -99,6 +104,14 @@
   border: none;
   background-color: var(--bgc-sidenav);
   color: #ffffff;
+  border: 2px solid transparent;
+}
+
+.signin-button button:hover {
+  background-color: white;
+  border: 2px solid var(--bgc-sidenav);
+  color: var(--bgc-sidenav);
+  transition: 1s ease;
 }
 
 .login-right {

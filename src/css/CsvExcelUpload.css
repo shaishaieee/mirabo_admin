@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+:root {
+  --fontcolor-side: #c2c7d0;
+  --bgc-sidenav: #343a40;
+  --fontcolor-header: #00000080;
+}
+
+.csvexcelupload.expanded {
+  font-family: "Source Sans 3", serif;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 8vh;
+  width: calc(100vw-250px);
+}
+
+.csvexcelupload.minimized {
+  font-family: "Source Sans 3", serif;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 8vh;
+  width: calc(100vw-80px);
+}
+
+.csvexcelupload h1 {
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.csvexcel-content {
+  margin-left: 20px;
+}
+
+.csvexcel-content h3 {
+  font-weight: 500;
+}
+
+.upload-area {
+  height: 30px;
+  padding: 5px 20px;
+}
+
+.upload-area form {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.upload-area form .submit-upload {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--bgc-sidenav);
+  width: 150px;
+  background-color: var(--bgc-sidenav);
+  color: white;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  height: 40px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.upload-area form .submit-upload:hover {
+  background-color: white;
+  color: var(--bgc-sidenav);
+  font-weight: 500;
+  transition: 1s ease;
+}
+
+.upload-area form input {
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  width: inherit;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  outline: none;
+}
+
+::-webkit-file-upload-button {
+  font-family: "Source Sans 3", serif;
+  color: white;
+  background-color: var(--bgc-sidenav);
+  padding: 11px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  outline: none;
+}
+
+.alert {
+  margin: 5px 0;
+  padding: 10px 20px;
+  font-family: "Source Sans 3", serif;
+  background-color: #ffb3b3;
+  color: #ff0000;
+  border-radius: 5px;
+}
+
+.warning {
+  margin: 65px 20px;
+}
+
+.data-viewer {
+  width: inherit;
+  margin: 70px 10px;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.table-responsive {
+  width: inherit;
+}
+
+.table-responsive .table {
+  border-collapse: collapse;
+  width: inherit;
+  border: 1px solid var(--bgc-sidenav);
+  border-radius: 5px;
+}
+
+.table-responsive .table tr th {
+  border: 1px solid var(--bgc-sidenav);
+}
+
+.table-responsive .table tbody tr td {
+  border: 1px solid var(--bgc-sidenav);
+}

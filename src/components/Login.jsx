@@ -9,23 +9,23 @@ const Login = () => {
   return (
     <div className="login">
       <h1>
-        Admin <span>AICE</span>
+        Admin <span>MIRABO</span>
       </h1>
 
       <div className="login-container">
         <div className="login-left">
-          <h3>Sign in to Start</h3>
+          <h3>サインインして開始</h3>
 
           <form action="">
             <div className="user-input">
-              <input type="text" placeholder="Email" />{" "}
+              <input type="text" placeholder="メール" />{" "}
               <i>
                 <FaEnvelope />
               </i>
             </div>
 
             <div className="user-input">
-              <input type="password" placeholder="Password" />{" "}
+              <input type="password" placeholder="パスワード" />{" "}
               <i>
                 <FaLock />
               </i>
@@ -33,22 +33,24 @@ const Login = () => {
 
             <div className="login-options">
               <div className="checkbox">
-                <input type="checkbox" /> Remember me
+                <input type="checkbox" /> 私を覚えてますか
               </div>
 
-              <p>I forgot my password</p>
+              <p onClick={() => navigate("/forgetpassword")}>
+                パスワードを忘れました
+              </p>
             </div>
           </form>
 
           <div className="signin-button" onClick={() => navigate("/dashboard")}>
-            <button>Sign In</button>
+            <button>サインイン</button>
           </div>
         </div>
 
         <div className="login-right">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-            laborum.
+            Lorem、ipsum dolor
+            は、エリートを構築するために座っています。イブニエット、 陣痛。
           </p>
           <img src={LoginPhoto} alt="Login" />
         </div>

@@ -11,11 +11,20 @@ header {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.header {
+.header.expanded {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 250px;
+  padding: 0 20px;
+  height: 8vh;
+}
+
+.header.minimized {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 70px;
   padding: 0 20px;
   height: 8vh;
 }

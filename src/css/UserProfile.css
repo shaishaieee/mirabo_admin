@@ -4,3 +4,45 @@
   --bgc-sidenav: #343a40;
   --fontcolor-header: #00000080;
 }
+
+.userprofile.expanded {
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 8vh;
+  width: calc(100vw-250px);
+}
+
+.userprofile.minimized {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 8vh;
+  width: calc(100vw-80px);
+}
+
+.userprofile h1 {
+  margin: 20px;
+  font-weight: 500;
+  font-family: "Source Sans 3", serif;
+}
+
+.userprofile-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-info {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 20px 35px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-info h3 {
+  font-family: "Source Sans 3", serif;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.profile-info h3 span {
+  font-weight: 400;
+}

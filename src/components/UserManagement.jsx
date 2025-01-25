@@ -1,24 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/UserManagemenr.css";
-import SideNavigation from "./SideNavigation";
-import Header from "./Header";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaUserEdit } from "react-icons/fa";
 import { LuArrowDownUp } from "react-icons/lu";
+import { HiUserAdd } from "react-icons/hi";
+import { TiUserDelete } from "react-icons/ti";
+import Header from "./Header";
 
 const UserManagement = () => {
+  const [isSideNavMinimized, setIsSideNavMinimized] = useState(false);
+  const toggleSideNav = () => {
+    setIsSideNavMinimized(!isSideNavMinimized);
+  };
   return (
     <>
-      <Header />
-      <SideNavigation />
-
-      <div className="usermanagement">
-        <h1>User Management</h1>
+      <Header
+        toggleSideNav={toggleSideNav}
+        isSideNavMinimized={isSideNavMinimized}
+      />
+      <div
+        className={`usermanagement ${
+          isSideNavMinimized ? "minimized" : "expanded"
+        }`}
+      >
+        <h1>ユーザー管理</h1>
         <div className="usermanagement-content">
-          <div className="management-search">
-            <input type="text" placeholder="Search" />
-            <i>
-              <FaSearch />
-            </i>
+          <div className="management-header">
+            <div className="management-search">
+              <input type="text" placeholder="検索" />
+              <i>
+                <FaSearch />
+              </i>
+            </div>
+
+            <div className="management-crudicons">
+              <i>
+                <HiUserAdd />
+              </i>
+            </div>
           </div>
 
           <div className="management-table">
@@ -26,24 +44,19 @@ const UserManagement = () => {
               <thead>
                 <tr>
                   <th>
-                    ID
+                    名前
                     <i>
                       <LuArrowDownUp />
                     </i>
                   </th>
                   <th>
-                    Name
+                    作成日
                     <i>
                       <LuArrowDownUp />
                     </i>
                   </th>
-                  <th>Answer</th>
-                  <th>
-                    Date
-                    <i>
-                      <LuArrowDownUp />
-                    </i>
-                  </th>
+                  <th>役割</th>
+                  <th>アクション</th>
                 </tr>
               </thead>
 
@@ -52,31 +65,76 @@ const UserManagement = () => {
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td>
+                    <div className="management-actionicon">
+                      <i>
+                        <FaUserEdit />
+                      </i>
+                      <i>
+                        <TiUserDelete />
+                      </i>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td>
+                    <div className="management-actionicon">
+                      <i>
+                        <FaUserEdit />
+                      </i>
+                      <i>
+                        <TiUserDelete />
+                      </i>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td>
+                    <div className="management-actionicon">
+                      <i>
+                        <FaUserEdit />
+                      </i>
+                      <i>
+                        <TiUserDelete />
+                      </i>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td>
+                    <div className="management-actionicon">
+                      <i>
+                        <FaUserEdit />
+                      </i>
+                      <i>
+                        <TiUserDelete />
+                      </i>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td>
+                    <div className="management-actionicon">
+                      <i>
+                        <FaUserEdit />
+                      </i>
+                      <i>
+                        <TiUserDelete />
+                      </i>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>

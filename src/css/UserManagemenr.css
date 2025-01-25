@@ -5,12 +5,20 @@
   --fontcolor-header: #00000080;
 }
 
-.usermanagement {
+.usermanagement.expanded {
   position: absolute;
-  margin-left: 250px;
+  width: calc(100vw - 250px);
+  height: calc(100vh - 8vh);
   margin-top: 8vh;
-  height: 70vh;
-  width: 78vw;
+  margin-left: 250px;
+}
+
+.usermanagement.minimized {
+  position: absolute;
+  width: calc(100vw - 80px);
+  height: calc(100vh - 8vh);
+  margin-top: 8vh;
+  margin-left: 80px;
 }
 
 .usermanagement h1 {
@@ -20,20 +28,17 @@
 }
 
 .usermanagement-content {
-  margin: 0 0 20px 20px;
+  margin: 0 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-  width: inherit;
-  height: inherit;
   border-radius: 5px;
-  padding: 20px;
 }
 
 .management-search {
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: 30px;
 }
 
 .management-search input {
@@ -56,13 +61,34 @@
   border-bottom-right-radius: 5px;
 }
 
+.management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.management-header .management-crudicons {
+  display: flex;
+  gap: 10px;
+}
+
+.management-header .management-crudicons i {
+  color: var(--bgc-sidenav);
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.management-header .management-crudicons i:hover {
+  color: var(--fontcolor-header);
+}
+
 .management-table {
-  margin: 20px 5px;
+  width: inherit;
+  padding: 25px;
 }
 
 .management-table table {
   border-collapse: collapse;
-  width: 100%;
+  width: inherit;
 }
 
 .management-table table th {
@@ -71,6 +97,7 @@
   color: black;
   text-align: start;
   font-family: "Source Sans 3", serif;
+  width: 300px;
 }
 
 .management-table table th i {
@@ -81,4 +108,19 @@
   border: 1px solid var(--fontcolor-header);
   padding: 10px;
   height: 20px;
+}
+
+.management-actionicon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.management-actionicon i {
+  font-size: 25px;
+  color: var(--bgc-sidenav);
+}
+
+.management-actionicon i:hover {
+  color: var(--fontcolor-header);
 }

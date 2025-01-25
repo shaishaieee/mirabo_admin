@@ -1,19 +1,20 @@
-import React from "react";
 import Logo from "../images/logo.png";
-import { FaSearch, FaUser, FaUsers } from "react-icons/fa";
+import { FaSearch, FaUpload, FaUser, FaUsers } from "react-icons/fa";
 import "../css/SideNavigation.css";
 import { AiFillDashboard } from "react-icons/ai";
 import { IoLogOut } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
-const SideNavigation = ({ isOpen }) => {
+const SideNavigation = ({ isSideNavMinimized }) => {
   const navigate = useNavigate();
 
   return (
-    <aside className={`side-nav ${isOpen ? "open" : "close"}`}>
+    <aside
+      className={`side-nav ${isSideNavMinimized ? "minimized" : "expanded"}`}
+    >
       <div className="side-nav-logo">
         <img src={Logo} alt="Logo" />
-        <h2>Admin AICE</h2>
+        <h2>Admin MIRABO</h2>
       </div>
 
       <div className="side-nav-profile">
@@ -23,7 +24,7 @@ const SideNavigation = ({ isOpen }) => {
 
       <nav>
         <div className="side-nav-search">
-          <input type="text" placeholder="Search" />
+          <input type="text" placeholder="検索" />
           <i>
             <FaSearch />
           </i>
@@ -34,25 +35,61 @@ const SideNavigation = ({ isOpen }) => {
             <i>
               <AiFillDashboard />
             </i>
-            <button className="side-nav-button">Dashboard</button>{" "}
+            <button
+              className={`side-nav-button ${
+                isSideNavMinimized ? "minimized" : "expanded"
+              }`}
+            >
+              ダッシュボード
+            </button>
           </li>
           <li onClick={() => navigate("/usermanagement")}>
             <i>
               <FaUsers />
             </i>
-            <button className="side-nav-button">User Management</button>
+            <button
+              className={`side-nav-button ${
+                isSideNavMinimized ? "minimized" : "expanded"
+              }`}
+            >
+              ユーザー管理
+            </button>
           </li>
           <li onClick={() => navigate("/userprofile")}>
             <i>
               <FaUser />
             </i>
-            <button className="side-nav-button">User Profile</button>
+            <button
+              className={`side-nav-button ${
+                isSideNavMinimized ? "minimized" : "expanded"
+              }`}
+            >
+              ユーザープロフィール
+            </button>
+          </li>
+          <li onClick={() => navigate("/csvexcelupload")}>
+            <i>
+              <FaUpload />
+            </i>
+            <button
+              className={`side-nav-button ${
+                isSideNavMinimized ? "minimized" : "expanded"
+              }`}
+            >
+              CVS/Excel ファイル
+            </button>
           </li>
           <li onClick={() => navigate("/")}>
             <i>
               <IoLogOut />
             </i>
-            <button className="side-nav-button">Log Out</button>
+            <button
+              className={`side-nav-button ${
+                isSideNavMinimized ? "minimized" : "expanded"
+              }`}
+            >
+              ログアウト
+            </button>
           </li>
         </ul>
       </nav>

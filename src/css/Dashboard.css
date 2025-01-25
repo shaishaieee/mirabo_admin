@@ -12,13 +12,15 @@
   --red: #dc3545;
   --darkred: #bb2d3b;
 }
+
 .dashboard {
   position: absolute;
-  margin-left: 250px;
-  margin-top: 7vh;
+  max-width: 100vw;
 }
 .dashboard-content {
-  margin-left: 15px;
+  margin-left: 265px;
+  margin-top: 10vh;
+  width: inherit;
 }
 
 .dashboard-content h1 {
@@ -28,6 +30,7 @@
 
 .dashboard-boxes {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -35,9 +38,8 @@
   display: flex;
   justify-content: space-between;
   height: 90px;
-  width: 275px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  min-width: 380px;
+  border-radius: 5px;
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -54,28 +56,19 @@
   background-color: var(--yellow);
 }
 
-.box.D {
-  background-color: var(--red);
-}
-
 .box.A i {
-  font-size: 70px;
+  font-size: 60px;
   color: var(--darkblue);
 }
 
 .box.B i {
-  font-size: 70px;
+  font-size: 60px;
   color: var(--darkgreen);
 }
 
 .box.C i {
-  font-size: 70px;
+  font-size: 60px;
   color: var(--darkyellow);
-}
-
-.box.D i {
-  font-size: 70px;
-  color: var(--darkred);
 }
 
 .box-text h1 {
@@ -90,34 +83,6 @@
   font-family: "Source Sans 3", serif;
   font-weight: 500;
   color: #ffffff;
-}
-
-.box-button {
-  display: flex;
-  justify-content: center;
-  gap: 7px;
-  height: 20px;
-  width: 305px;
-  padding: 3px 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  color: #ffffff;
-}
-
-.box-button.A {
-  background-color: var(--darkblue);
-}
-
-.box-button.B {
-  background-color: var(--darkgreen);
-}
-
-.box-button.C {
-  background-color: var(--darkyellow);
-}
-
-.box-button.D {
-  background-color: var(--darkred);
 }
 
 .box-button h4 {

@@ -1,45 +1,36 @@
-import React, { useState } from "react";
 import "../css/Dashboard.css";
-import SideNavigation from "./SideNavigation";
+import { FaRobot } from "react-icons/fa";
+import { FaUsersLine } from "react-icons/fa6";
+import { RiAdvertisementFill } from "react-icons/ri";
 import Header from "./Header";
-import { HiOutlineShoppingBag } from "react-icons/hi";
-import { FaArrowCircleRight } from "react-icons/fa";
+import { useState } from "react";
 
 const Dashboard = () => {
-  const [isSideNavOpen, setIsSideNavOpen] = useState(true);
+  const [isSideNavMinimized, setIsSideNavMinimized] = useState(false);
+  const toggleSideNav = () => {
+    setIsSideNavMinimized(!isSideNavMinimized);
+  };
+
   return (
     <>
-      <Header toggleSideNav={() => setIsSideNavOpen(!isSideNavOpen)} />
-      <SideNavigation
-        isOpen={isSideNavOpen}
-        toggleSideNav={() => setIsSideNavOpen(!isSideNavOpen)}
+      <Header
+        toggleSideNav={toggleSideNav}
+        isSideNavMinimized={isSideNavMinimized}
       />
-
-      <div
-        className={`dashboard ${
-          isSideNavOpen ? "sidenav-open" : "sidenav-close"
-        }`}
-      >
+      <div className="dashboard">
         <div className="dashboard-content">
-          <h1>Dashboard</h1>
+          <h1>ダッシュボード</h1>
           <div className="dashboard-boxes">
             {/* Box */}
             <div>
               <div className="box A">
                 <div className="box-text">
                   <h1>150</h1>
-                  <h4>New Order</h4>
+                  <h4>ミニアプリユーザー総数</h4>
                 </div>
 
                 <i>
-                  <HiOutlineShoppingBag />
-                </i>
-              </div>
-
-              <div className="box-button A">
-                <h4>More Info</h4>
-                <i>
-                  <FaArrowCircleRight />
+                  <FaUsersLine />
                 </i>
               </div>
             </div>
@@ -48,19 +39,12 @@ const Dashboard = () => {
             <div>
               <div className="box B">
                 <div className="box-text">
-                  <h1>53%</h1>
-                  <h4>Bounce Rate</h4>
+                  <h1>109</h1>
+                  <h4>ミニアプリ広告再生回数合計</h4>
                 </div>
 
                 <i>
-                  <HiOutlineShoppingBag />
-                </i>
-              </div>
-
-              <div className="box-button B">
-                <h4>More Info</h4>
-                <i>
-                  <FaArrowCircleRight />
+                  <RiAdvertisementFill />
                 </i>
               </div>
             </div>
@@ -69,40 +53,12 @@ const Dashboard = () => {
             <div>
               <div className="box C">
                 <div className="box-text">
-                  <h1>150</h1>
-                  <h4>New Order</h4>
+                  <h1>290</h1>
+                  <h4>総GPT応答</h4>
                 </div>
 
                 <i>
-                  <HiOutlineShoppingBag />
-                </i>
-              </div>
-
-              <div className="box-button C">
-                <h4>More Info</h4>
-                <i>
-                  <FaArrowCircleRight />
-                </i>
-              </div>
-            </div>
-
-            {/* Box */}
-            <div>
-              <div className="box D">
-                <div className="box-text">
-                  <h1>150</h1>
-                  <h4>New Order</h4>
-                </div>
-
-                <i>
-                  <HiOutlineShoppingBag />
-                </i>
-              </div>
-
-              <div className="box-button D">
-                <h4>More Info</h4>
-                <i>
-                  <FaArrowCircleRight />
+                  <FaRobot />
                 </i>
               </div>
             </div>

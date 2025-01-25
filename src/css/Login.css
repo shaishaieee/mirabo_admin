@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+:root {
+  --fontcolor-side: #c2c7d0;
+  --bgc-sidenav: #343a40;
+  --fontcolor-header: #00000080;
+  --bordercolor: #c2c7d039;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login h1 {
+  font-family: "Source Sans 3", serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.login h1 span {
+  font-weight: 300;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.login-left {
+  padding: 40px 0 0 0;
+  width: 370px;
+  height: 400px;
+}
+
+.login-left h3 {
+  text-align: center;
+  font-weight: 400;
+  font-family: "Source Sans 3", serif;
+}
+
+.login-left .user-input {
+  position: relative;
+  width: 100px;
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
+  width: inherit;
+}
+
+.login-left .user-input input {
+  width: 100%;
+  padding: 9px 10px;
+  font-family: "Source Sans 3", serif;
+  font-size: 18px;
+  border: 1px solid var(--fontcolor-header);
+  border-radius: 5px;
+}
+
+.login-left .user-input i {
+  position: absolute;
+  right: 10px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 20px;
+}
+
+.login-options .checkbox {
+  font-family: "Source Sans 3", serif;
+  font-size: 14px;
+}
+
+.login-options p {
+  margin: 0;
+  font-family: "Source Sans 3", serif;
+  font-size: 14px;
+}
+
+.signin-button {
+  margin: 20px;
+}
+
+.signin-button button {
+  width: 100%;
+  padding: 10px;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--bgc-sidenav);
+  color: #ffffff;
+}
+
+.login-right {
+  width: 370px;
+  height: 400px;
+  background-color: var(--bgc-sidenav);
+  padding: 20px;
+}
+
+.login-right p {
+  text-align: center;
+  color: white;
+  font-family: "Source Sans 3", serif;
+}
+
+.login-right img {
+  width: 380px;
+}

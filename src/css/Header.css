@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+:root {
+  --fontcolor-side: #c2c7d0;
+  --bgc-sidenav: #343a40;
+  --fontcolor-header: #00000080;
+}
+
+header {
+  position: absolute;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 250px;
+  padding: 0 20px;
+  height: 8vh;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-left i {
+  color: var(--fontcolor-header);
+}
+
+.header-left h4 {
+  color: var(--fontcolor-header);
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-right i {
+  color: var(--fontcolor-header);
+}

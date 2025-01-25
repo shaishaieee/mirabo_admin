@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+:root {
+  --fontcolor-side: #c2c7d0;
+  --bgc-sidenav: #343a40;
+  --fontcolor-header: #00000080;
+}
+
+.usermanagement {
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 8vh;
+  height: 70vh;
+  width: 78vw;
+}
+
+.usermanagement h1 {
+  font-family: "Source Sans 3", serif;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.usermanagement-content {
+  margin: 0 0 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  width: inherit;
+  height: inherit;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.management-search {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.management-search input {
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  width: 300px;
+  padding: 7px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid var(--fontcolor-header);
+}
+
+.management-search i {
+  font-size: 20px;
+  padding: 5.1px 10px;
+  border-bottom: 1px solid var(--fontcolor-header);
+  border-top: 1px solid var(--fontcolor-header);
+  border-right: 1px solid var(--fontcolor-header);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.management-table {
+  margin: 20px 5px;
+}
+
+.management-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.management-table table th {
+  border: 1px solid var(--fontcolor-header);
+  padding: 10px;
+  color: black;
+  text-align: start;
+  font-family: "Source Sans 3", serif;
+}
+
+.management-table table th i {
+  margin-left: 10px;
+}
+
+.management-table table tbody tr td {
+  border: 1px solid var(--fontcolor-header);
+  padding: 10px;
+  height: 20px;
+}

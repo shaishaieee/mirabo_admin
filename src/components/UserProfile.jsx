@@ -23,152 +23,77 @@ const UserProfile = () => {
         <div className="userprofile-content">
           <div className="profile-info">
             <h3>
-              First Name: <span>Lorry Mae</span>
+              ファーストネーム: <span>Lorry Mae</span>
             </h3>
             <h3>
-              Last Name: <span>Mcintire</span>
+              苗字: <span>Mcintire</span>
             </h3>
 
             <h3>
-              Email: <span>Mcintiire@test.com</span>
+              メール: <span>Mcintiire@test.com</span>
             </h3>
             <h3>
-              Role: <span>User</span>
+              役割: <span>User</span>
             </h3>
           </div>
           <div className="profile-info">
             <h3>
-              First Name: <span>Lorry Mae</span>
+              ファーストネーム: <span>Lorry Mae</span>
             </h3>
             <h3>
-              Last Name: <span>Mcintire</span>
+              苗字: <span>Mcintire</span>
             </h3>
 
             <h3>
-              Email: <span>Mcintiire@test.com</span>
+              メール: <span>Mcintiire@test.com</span>
             </h3>
             <h3>
-              Role: <span>User</span>
+              役割: <span>User</span>
             </h3>
           </div>
           <div className="profile-info">
             <h3>
-              First Name: <span>Lorry Mae</span>
+              ファーストネーム: <span>Lorry Mae</span>
             </h3>
             <h3>
-              Last Name: <span>Mcintire</span>
+              苗字: <span>Mcintire</span>
             </h3>
 
             <h3>
-              Email: <span>Mcintiire@test.com</span>
+              メール: <span>Mcintiire@test.com</span>
             </h3>
             <h3>
-              Role: <span>User</span>
+              役割: <span>User</span>
             </h3>
           </div>
           <div className="profile-info">
             <h3>
-              First Name: <span>Lorry Mae</span>
+              ファーストネーム: <span>Lorry Mae</span>
             </h3>
             <h3>
-              Last Name: <span>Mcintire</span>
+              苗字: <span>Mcintire</span>
             </h3>
 
             <h3>
-              Email: <span>Mcintiire@test.com</span>
+              メール: <span>Mcintiire@test.com</span>
             </h3>
             <h3>
-              Role: <span>User</span>
+              役割: <span>User</span>
             </h3>
           </div>
           <div className="profile-info">
             <h3>
-              First Name: <span>Lorry Mae</span>
+              ファーストネーム: <span>Lorry Mae</span>
             </h3>
             <h3>
-              Last Name: <span>Mcintire</span>
-            </h3>
-
-            <h3>
-              Email: <span>Mcintiire@test.com</span>
-            </h3>
-            <h3>
-              Role: <span>User</span>
-            </h3>
-          </div>
-          <div className="profile-info">
-            <h3>
-              First Name: <span>Lorry Mae</span>
-            </h3>
-            <h3>
-              Last Name: <span>Mcintire</span>
+              苗字: <span>Mcintire</span>
             </h3>
 
             <h3>
-              Email: <span>Mcintiire@test.com</span>
+              メール: <span>Mcintiire@test.com</span>
             </h3>
             <h3>
-              Role: <span>User</span>
-            </h3>
-          </div>
-          <div className="profile-info">
-            <h3>
-              First Name: <span>Lorry Mae</span>
-            </h3>
-            <h3>
-              Last Name: <span>Mcintire</span>
-            </h3>
-
-            <h3>
-              Email: <span>Mcintiire@test.com</span>
-            </h3>
-            <h3>
-              Role: <span>User</span>
-            </h3>
-          </div>
-          <div className="profile-info">
-            <h3>
-              First Name: <span>Lorry Mae</span>
-            </h3>
-            <h3>
-              Last Name: <span>Mcintire</span>
-            </h3>
-
-            <h3>
-              Email: <span>Mcintiire@test.com</span>
-            </h3>
-            <h3>
-              Role: <span>User</span>
-            </h3>
-          </div>
-          <div className="profile-info">
-            <h3>
-              First Name: <span>Lorry Mae</span>
-            </h3>
-            <h3>
-              Last Name: <span>Mcintire</span>
-            </h3>
-
-            <h3>
-              Email: <span>Mcintiire@test.com</span>
-            </h3>
-            <h3>
-              Role: <span>User</span>
-            </h3>
-          </div>
-          <div className="profile-info">
-            <h3>
-              First Name: <span>Lorry Mae</span>
-            </h3>
-            <h3>
-              Last Name: <span>Mcintire</span>
-            </h3>
-
-            <h3>
-              Email: <span>Mcintiire@test.com</span>
-            </h3>
-            <h3>
-              Role: <span>User</span>
+              役割: <span>User</span>
             </h3>
           </div>
         </div>

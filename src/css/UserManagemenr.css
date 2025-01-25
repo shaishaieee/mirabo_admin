@@ -15,7 +15,7 @@
 
 .usermanagement.minimized {
   position: absolute;
-  width: calc(100vw - 80px);
+  width: calc(100vw - 110px);
   height: calc(100vh - 8vh);
   margin-top: 8vh;
   margin-left: 80px;
@@ -82,13 +82,13 @@
 }
 
 .management-table {
-  width: inherit;
+  min-width: inherit;
   padding: 25px;
 }
 
 .management-table table {
   border-collapse: collapse;
-  width: inherit;
+  min-width: inherit;
 }
 
 .management-table table th {
@@ -97,7 +97,31 @@
   color: black;
   text-align: start;
   font-family: "Source Sans 3", serif;
-  width: 300px;
+}
+
+.management-table table thead tr th:last-child {
+  min-width: 100px;
+}
+.management-table table thead tr th:nth-last-child(2) {
+  min-width: 150px;
+}
+
+.management-table table thead tr th:nth-last-child(3) {
+  min-width: 210px;
+}
+
+.management-table table thead tr th:first-child {
+  min-width: 650px;
+}
+
+.usermanagement.minimized
+  .usermanagement-content
+  .management-table
+  table
+  thead
+  tr
+  th:first-child {
+  min-width: 800px;
 }
 
 .management-table table th i {

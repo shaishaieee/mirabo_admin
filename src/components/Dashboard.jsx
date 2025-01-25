@@ -18,7 +18,11 @@ const Dashboard = () => {
         isSideNavMinimized={isSideNavMinimized}
       />
       <div className="dashboard">
-        <div className="dashboard-content">
+        <div
+          className={`dashboard-content ${
+            isSideNavMinimized ? "minimized" : "expanded"
+          }`}
+        >
           <h1>ダッシュボード</h1>
           <div className="dashboard-boxes">
             {/* Box */}

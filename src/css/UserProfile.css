@@ -28,19 +28,19 @@
 .userprofile-content {
   display: flex;
   flex-wrap: wrap;
+  margin: 20px 30px;
 }
 
 .profile-info {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 20px 35px;
+  margin: 10px 15px;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .profile-info h3 {
   font-family: "Source Sans 3", serif;
   font-weight: 600;
-  margin: 5px 0;
 }
 
 .profile-info h3 span {

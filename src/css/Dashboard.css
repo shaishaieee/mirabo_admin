@@ -15,12 +15,16 @@
 
 .dashboard {
   position: absolute;
-  max-width: 100vw;
 }
-.dashboard-content {
+.dashboard-content.expanded {
   margin-left: 265px;
   margin-top: 10vh;
-  width: inherit;
+}
+
+.dashboard-content.minimized {
+  margin-left: 80px;
+  margin-top: 10vh;
+  width: calc(100vw-80px);
 }
 
 .dashboard-content h1 {

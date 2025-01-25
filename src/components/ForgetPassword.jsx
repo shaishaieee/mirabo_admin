@@ -18,19 +18,18 @@ const ForgetPassword = () => {
             <div className="forgetpassword-topbox">
               <img src={Forget} alt="Forget Password" />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-                sunt!
+                Lorem、ipsum dolor
+                は、エリートを構築するために座っています。イブニエット、 陣痛。
               </p>
             </div>
 
             <div className="forget-password-box">
               <p>
-                You forgot your password? Here you can easily retrieve a new
-                password
+                パスワードを忘れましたか？ここで簡単に新しいパスワードを取得できます
               </p>
               <form action="" className="forget-password-form">
                 <div className="forgetpasswor-email">
-                  <input type="email" placeholder="Email" />
+                  <input type="email" placeholder="メール" />
                   <i>
                     <FaEnvelope />
                   </i>
@@ -38,12 +37,12 @@ const ForgetPassword = () => {
 
                 <div className="forgetpassword-button">
                   <button onClick={() => navigate("/")}>
-                    Request new password
+                    新しいパスワードをリクエスト
                   </button>
                 </div>
               </form>
 
-              <h5 onClick={() => navigate("/")}>Login</h5>
+              <h5 onClick={() => navigate("/")}>ログイン</h5>
             </div>
           </div>
         </div>

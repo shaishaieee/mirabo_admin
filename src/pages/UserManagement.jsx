@@ -1,27 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/UserManagemenr.css";
 import { FaSearch, FaUserEdit } from "react-icons/fa";
 import { LuArrowDownUp } from "react-icons/lu";
 import { HiUserAdd } from "react-icons/hi";
 import { TiUserDelete } from "react-icons/ti";
-import Header from "./Header";
 
 const UserManagement = () => {
-  const [isSideNavMinimized, setIsSideNavMinimized] = useState(false);
-  const toggleSideNav = () => {
-    setIsSideNavMinimized(!isSideNavMinimized);
-  };
   return (
     <>
-      <Header
-        toggleSideNav={toggleSideNav}
-        isSideNavMinimized={isSideNavMinimized}
-      />
-      <div
-        className={`usermanagement ${
-          isSideNavMinimized ? "minimized" : "expanded"
-        }`}
-      >
+      <div className="usermanagement">
         <h1>ユーザー管理</h1>
         <div className="usermanagement-content">
           <div className="management-header">

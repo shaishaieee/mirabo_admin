@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../css/CsvExcelUpload.css";
 import * as XLSX from "xlsx";
-import Header from "./Header";
 import { FaUpload } from "react-icons/fa";
 
 const CsvExcelUpload = () => {
@@ -45,22 +44,9 @@ const CsvExcelUpload = () => {
     }
   };
 
-  const [isSideNavMinimized, setIsSideNavMinimized] = useState(false);
-  const toggleSideNav = () => {
-    setIsSideNavMinimized(!isSideNavMinimized);
-  };
-
   return (
     <>
-      <Header
-        toggleSideNav={toggleSideNav}
-        isSideNavMinimized={isSideNavMinimized}
-      />
-      <div
-        className={`csvexcelupload ${
-          isSideNavMinimized ? "minimized" : "expanded"
-        }`}
-      >
+      <div className="csvexcelupload">
         <h1>CVS/Excel ファイル</h1>
 
         <div className="csvexcel-content">

@@ -13,23 +13,10 @@
   --darkred: #bb2d3b;
 }
 
-.dashboard {
-  position: absolute;
-}
-.dashboard-content.expanded {
-  margin-left: 265px;
-  margin-top: 10vh;
-}
-
-.dashboard-content.minimized {
-  margin-left: 80px;
-  margin-top: 10vh;
-  width: calc(100vw-80px);
-}
-
-.dashboard-content h1 {
+.dashboard h1 {
   font-weight: 400;
   font-family: "Source Sans 3", serif;
+  margin-left: 20px;
 }
 
 /* BOXES */
@@ -37,6 +24,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  margin-left: 15px;
 }
 
 .box {

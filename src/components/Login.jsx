@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Login.css";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import LoginPhoto from "../images/login.png";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../AuthContext";
 
 const Login = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
+  const [username, setUsername] = useState("Shaira");
+  const [password, setPassword] = useState("123");
+
+  const handleLogin = () => {
+    if (username && password) {
+      login();
+      navigate("/dashboard");
+    }
+  };
+
   return (
     <div className="login">
       <h1>
@@ -18,14 +30,24 @@ const Login = () => {
 
           <form action="">
             <div className="user-input">
-              <input type="text" placeholder="メール" />{" "}
+              <input
+                type="text"
+                placeholder="メール"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
               <i>
                 <FaEnvelope />
               </i>
             </div>
 
             <div className="user-input">
-              <input type="password" placeholder="パスワード" />{" "}
+              <input
+                type="password"
+                placeholder="パスワード"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
               <i>
                 <FaLock />
               </i>
@@ -42,7 +64,7 @@ const Login = () => {
             </div>
           </form>
 
-          <div className="signin-button" onClick={() => navigate("/dashboard")}>
+          <div className="signin-button" onClick={handleLogin}>
             <button>サインイン</button>
           </div>
         </div>

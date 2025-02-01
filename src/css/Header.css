@@ -7,10 +7,9 @@
 
 header {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-
 .header.expanded {
   display: flex;
   justify-content: space-between;
@@ -42,14 +41,4 @@ header {
 .header-left h4 {
   color: var(--fontcolor-header);
   font-weight: 600;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.header-right i {
-  color: var(--fontcolor-header);
 }

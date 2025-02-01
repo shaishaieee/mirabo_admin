@@ -1,6 +1,5 @@
 import { FaBars } from "react-icons/fa";
 import "../css/Header.css";
-import SideNav from "./SideNavigation";
 
 const Header = ({ toggleSideNav, isSideNavMinimized }) => {
   return (
@@ -18,7 +17,6 @@ const Header = ({ toggleSideNav, isSideNavMinimized }) => {
           </div>
         </div>
       </header>
-      <SideNav isSideNavMinimized={isSideNavMinimized} />
     </>
   );
 };

@@ -5,30 +5,16 @@
   --fontcolor-header: #00000080;
 }
 
-.userprofile.expanded {
-  position: absolute;
-  margin-left: 250px;
-  margin-top: 8vh;
-  width: calc(100vw-250px);
-}
-
-.userprofile.minimized {
-  position: absolute;
-  margin-left: 80px;
-  margin-top: 8vh;
-  width: calc(100vw-80px);
-}
-
 .userprofile h1 {
-  margin: 20px;
   font-weight: 500;
   font-family: "Source Sans 3", serif;
+  margin-left: 20px;
 }
 
 .userprofile-content {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 30px;
+  margin-left: 20px;
 }
 
 .profile-info {

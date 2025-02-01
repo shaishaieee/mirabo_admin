@@ -5,22 +5,6 @@
   --fontcolor-header: #00000080;
 }
 
-.csvexcelupload.expanded {
-  font-family: "Source Sans 3", serif;
-  position: absolute;
-  margin-left: 250px;
-  margin-top: 8vh;
-  width: calc(100vw-250px);
-}
-
-.csvexcelupload.minimized {
-  font-family: "Source Sans 3", serif;
-  position: absolute;
-  margin-left: 80px;
-  margin-top: 8vh;
-  width: calc(100vw-80px);
-}
-
 .csvexcelupload h1 {
   margin-left: 20px;
   font-weight: 400;
